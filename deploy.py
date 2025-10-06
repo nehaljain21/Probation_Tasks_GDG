@@ -1,7 +1,7 @@
 import streamlit as st
 import pickle
 import numpy as np
-model = pickle.load(open("E:\\Nehal Jain\\python\\Student_Performance_Predictor\\student_model.pkl", 'rb'))
+model = pickle.load(open("student_model.pkl", 'rb'))
 st.title("Student Performance Predictor")
 
 Hours_Studied= st.number_input("Hours Studied = ",min_value=0,max_value=100)
